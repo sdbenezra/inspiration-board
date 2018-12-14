@@ -12,18 +12,24 @@ class Board extends Component {
     super();
 
     this.state = {
-      cards: [],
+      cards: [CARD_DATA.cards],
     };
+    console.log(this.state.cards);
   }
 
   render() {
+    const cards = this.state.cards[0].map((card, i) => {
+      return <Card key={i} text={card.text} emoji={card.emoji}
+        />
+    });
+
     return (
       <div>
-        Board
+        {cards}
       </div>
     )
-  }
 
+  }
 }
 
 Board.propTypes = {
