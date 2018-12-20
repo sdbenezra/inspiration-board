@@ -23,10 +23,20 @@ ShallowWrapper {
       "children": <div
         className="card__content"
 >
-        <p>
+        <p
+                className="card__content-text"
+        >
                 text
         </p>
-        <p />
+        <p
+                className="card__content-emoji"
+        />
+        <button
+                className="card__delete"
+                onClick={[Function]}
+        >
+                Delete
+        </button>
 </div>,
       "className": "card",
     },
@@ -37,10 +47,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
+          <p
+            className="card__content-text"
+>
             text
 </p>,
-          <p />,
+          <p
+            className="card__content-emoji"
+/>,
+          <button
+            className="card__delete"
+            onClick={[Function]}
+>
+            Delete
+</button>,
         ],
         "className": "card__content",
       },
@@ -52,6 +72,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "text",
+            "className": "card__content-text",
           },
           "ref": null,
           "rendered": "text",
@@ -63,10 +84,24 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "card__content-emoji",
           },
           "ref": null,
           "rendered": null,
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Delete",
+            "className": "card__delete",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Delete",
+          "type": "button",
         },
       ],
       "type": "div",
@@ -82,10 +117,20 @@ ShallowWrapper {
         "children": <div
           className="card__content"
 >
-          <p>
+          <p
+                    className="card__content-text"
+          >
                     text
           </p>
-          <p />
+          <p
+                    className="card__content-emoji"
+          />
+          <button
+                    className="card__delete"
+                    onClick={[Function]}
+          >
+                    Delete
+          </button>
 </div>,
         "className": "card",
       },
@@ -96,10 +141,20 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <p>
+            <p
+              className="card__content-text"
+>
               text
 </p>,
-            <p />,
+            <p
+              className="card__content-emoji"
+/>,
+            <button
+              className="card__delete"
+              onClick={[Function]}
+>
+              Delete
+</button>,
           ],
           "className": "card__content",
         },
@@ -111,6 +166,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "text",
+              "className": "card__content-text",
             },
             "ref": null,
             "rendered": "text",
@@ -122,10 +178,24 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": undefined,
+              "className": "card__content-emoji",
             },
             "ref": null,
             "rendered": null,
             "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete",
+              "className": "card__delete",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Delete",
+            "type": "button",
           },
         ],
         "type": "div",
