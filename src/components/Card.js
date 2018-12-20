@@ -6,11 +6,6 @@ import './Card.css';
 
 
 class Card extends Component {
-  constructor(props){
-    super(props)
-
-  }
-
 
   render() {
     const deleteCard = () => {
@@ -32,6 +27,10 @@ class Card extends Component {
 
 Card.propTypes = {
   onDeleteCallback: PropTypes.func,
+  id: PropTypes.number,
+  text: PropTypes.string,
+  emoji: PropTypes.string,
+  index: PropTypes.number,
 };
 
 export default Card;
